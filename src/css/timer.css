@@ -47,6 +47,7 @@ button[data-start]:disabled {
 }
 
 .value {
+  margin-top: 16px;
   font-size: 44px;
   line-height: 1;
   letter-spacing: 2px;
