@@ -1,4 +1,4 @@
-.container .form {
+.container.form {
   max-width: 420px;
   margin: 40px auto;
   padding: 24px;
@@ -23,17 +23,27 @@
   border: 1px solid #808080;
   border-radius: 4px;
   font-size: 16px;
+  transition: border-color 250 ease-in-out;
+}
+
+.form input[type='number']:focus {
+  outline: none;
+  border-color: #4e75ff;
+  box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.2);
 }
 
 fieldset {
   display: flex;
+  justify-content: center;
   max-width: 360px;
   gap: 48px;
   padding: 20px 24px 12px;
+  border: 1px solid #808080;
 }
 
 fieldset label {
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 }
@@ -47,8 +57,10 @@ button {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 250 easy-in-out;
 }
 
-button:hover {
+button:hover, 
+button:focus {
   background-color: #6c8cff;
 }
